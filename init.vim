@@ -13,6 +13,8 @@ Plug 'yuezk/vim-js'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'maxmellon/vim-jsx-pretty'
 
+Plug 'APZelos/blamer.nvim'
+
 call plug#end()
 
 " Indention Options
@@ -85,6 +87,9 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
+
+let g:blamer_enabled = 1
+let g:blamer_date_format = '%Y/%m/%d %H:%M'
 
 
 let g:NERDTreeShowHidden = 1
